@@ -15,6 +15,8 @@ import { Pokemon, PokemonSchema } from './entities/pokemon.entity';
         schema: PokemonSchema,
       }
     ])
-  ]
+  ],
+  //Se exporta la instancia de MongooseModule para que se pueda usar ese Modelo de Mongo en otros modulos
+  exports:[MongooseModule]
 })
 export class PokemonModule {}
